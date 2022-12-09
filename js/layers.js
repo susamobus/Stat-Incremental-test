@@ -4,7 +4,7 @@ function AddLayer(layername, layerdata) {
     layers[layername] = layerdata
 }
 
-document.getElementById("testing").innerHTML = JSON.stringify(layers)
+window.setInterval(function() {document.getElementById("testing").innerHTML = JSON.stringify(layers)},500)
 
 AddLayer(
     "rebirth",
